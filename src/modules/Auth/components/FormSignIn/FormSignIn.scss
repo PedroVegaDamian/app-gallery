@@ -1,0 +1,41 @@
+@use '@/shared/scss/variables' as *;
+
+.formSignIn {
+  width: 450px;
+  padding-block: 3rem;
+  margin-inline: 1rem;
+  border-radius: 1rem;
+  color: $color-blue-dark;
+  background-color: $color-white;
+  padding-inline: clamp(1.25rem, 6%, 2rem);
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 10vw, 2.4rem);
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: clamp(0.9rem, 4vw, 1rem);
+
+    &Link {
+      font-weight: 600;
+      color: $color-link;
+    }
+  }
+
+  &__form {
+    &Input {
+      &ErrorMessage {
+        height: 1.75rem;
+        color: $color-error;
+        margin-left: 0.8rem;
+        line-height: 0.75rem;
+        padding-top: 0.25rem;
+        font-size: clamp(0.6rem, 3vw, 0.75rem);
+      }
+    }
+  }
+}
